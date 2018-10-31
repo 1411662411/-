@@ -1,0 +1,21 @@
+#ignore packages installed by npm
+/node_modules
+
+#ignore build packed by webpack
+dist/*
+!dist/bundle.dll.css
+!dist/bundle.js
+!dist/dll-manifest.json
+
+#ignore build packed by happypack
+.happypack/
+
+#ignore build packed by idea
+.idea/
+
+.vscode/
+stats.json
+.history
+
+dist.rar
+dist.zip

@@ -1,0 +1,53 @@
+.crm-card{
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 10px 20px;
+    height: 460px;
+    .crm-card-header{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        >.crm-card-title{
+            display: inline-block;
+            background: #FFF3DD;
+            padding: 4px 8px;
+            font-family:  "Microsoft YaHei";
+            >span:first-child{
+                border-left: 4px solid #22baa0;
+                padding-left:2px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        >.crm-card-header-extra{
+            // display: none;
+            float: right;
+            padding: 4px 0;
+            .drag-handle{
+                cursor: move;
+            }
+        }
+    }
+    &:hover{
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        .crm-card-header-extra{
+            // display: block;
+        }
+    }
+    .crm-card-content{
+        max-height: 370px;
+        overflow: hidden;
+        position: relative;
+        .crm-card-content-fuzzy{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 9;
+            background: rgba(255,255,255, 0.8);
+            // background: #fff;
+            -webkit-filter: blur(20px); 
+            filter: blur(20px);
+        }
+    }
+}

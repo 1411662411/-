@@ -1,0 +1,49 @@
+.sales-kit{
+    position: relative;
+    .ant-table-tbody > tr.ant-table-row:hover td{
+        background: none;
+    }
+    .ant-table-tdwidth{
+        width: 25%;
+    }
+    .ant-table-footer{
+        padding: 0;
+        background: none;
+        overflow-y: scroll;
+        color: #1ebaa2;
+        font-weight: bold;
+    }
+    .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td{
+        text-align: center;
+        padding: 7px 8px;
+    }
+    .sales-kit-tbody{
+        tbody tr:nth-of-type(even) {
+            background-color: #f5f5f5;
+        }
+        .ant-table-body{
+            min-height: 160px;
+        }
+    }
+    .expect-info{
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        margin-top: -80px;
+        span{
+            display: block;
+            color: #1ebaa2;
+            font-size: 16px;
+            text-align: center;
+        }
+        img{
+            width: 120px;
+            height: 120px;;
+        }
+    }
+    @media screen and (max-width:1680px){
+        .expect-info{
+            right: 10%;
+        }
+    }
+}

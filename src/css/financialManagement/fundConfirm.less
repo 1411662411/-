@@ -1,0 +1,90 @@
+@import '../../css/components/infoComponent';
+
+
+.collapse-table {
+    margin-top: 20px;
+    .collapse-wrapper {
+        border-bottom: 1px dashed #999;
+        margin-bottom: 16px;
+    }
+    .ant-collapse-content-box {
+        padding: 0;
+    }
+    .ant-collapse-header {
+        word-break: break-all;
+        background-color: #fff;
+        .tips {
+            color: #f60;
+            flex-basis: 14px;
+            margin: 0 10px;
+            
+        }
+        .header-flex-wrapper {
+            display: flex;
+            align-items: center;
+            .countdown {
+                flex-basis: 150px;
+                margin-right: 15px;
+                strong {
+                    color: #f5222d;
+                }
+            }
+            .order-company {
+                flex-basis: 330px;
+                margin-right: 15px;
+            }
+            .ordertype-total {
+                flex-basis: 215px;
+                margin-right: 15px;
+            }
+            .remark {
+                flex: 2 1 400px;
+                height: 44px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+            .handle {
+                flex: 1 1 180px;
+                text-align: right;
+                padding-right: 15px;
+                .more {
+                    margin-right: 11px;
+                    color: #22baa0;
+                }
+            }
+        }
+    }
+    .ant-collapse-content {
+        background-color: #e4e4e4;
+        .collapse-content-table {
+            margin-left: 58px;
+            th,td {
+                padding: 5px;
+            }
+            .date {
+                width: 166px;
+            }
+            .bank {
+                width: 345px;
+            }
+            .account {
+                width: 230px;
+            }
+        }
+    }
+}
+
+
+.batch-comfirm-result {
+    list-style: decimal;
+    padding: 10px 24px 0 24px;
+    background-color: #eee;
+    max-height: 150px;
+    overflow-y: auto;
+}
+.my-Badge {
+    margin: -4px 0px 0px 8px;
+}
+

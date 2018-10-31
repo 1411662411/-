@@ -1,0 +1,38 @@
+
+.index{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    .draggable-container{
+        position: relative;
+        width: 100%;
+        min-height: 400px;
+        height: auto;
+        background: #99ee00;
+        user-select: none; 
+        &::before,&::after{
+            display: table;
+            content: ' ';
+            clear: both;
+        }
+        .ant-card{
+            transition: none;
+        }
+        .test01{
+            z-index: 9;
+        }
+    }
+    .test{
+        background: #ee2299!important;
+    }
+    .ab{
+        position: absolute;
+        background: #99ee00;
+    }
+    .handle{
+        cursor: move;
+    }
+    .custom-zoom{
+        width: 40%;
+    }
+}

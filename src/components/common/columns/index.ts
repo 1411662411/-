@@ -1,0 +1,1 @@
+export { columnsCustomer /* 付款清单（客户维度） */, columnsPersonMonthNum /* 付款账单（人月次维度明细表） */ } from './paymentBillColumns';

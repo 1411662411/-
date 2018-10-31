@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "es6",
+    "target": "es5",
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    // "skipLibCheck": true,
+    // "noUnusedParameters": true,
+    // "noUnusedLocals": true,
+    "jsx": "react",
+    "allowJs": true,
+    "lib": [
+      "es7",
+      "dom",
+      "es2015.promise",
+      "es5",
+      "es2015.iterable",
+      "es2015.generator",
+      "es2015.symbol"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

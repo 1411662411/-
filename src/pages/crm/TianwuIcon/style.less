@@ -1,0 +1,141 @@
+.crm-icon-card{
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    .crm-card-header{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        >.crm-card-title{
+            display: inline-block;
+            background: #FFF3DD;
+            padding: 4px 8px;
+            font-family:  "Microsoft YaHei";
+            >span:first-child{
+                border-left: 4px solid #22baa0;
+                padding-left:2px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        span{
+            display: inline-block;
+        }
+    }
+    .crm-card-content{
+        overflow: hidden;
+        position: relative;
+        .ant-card-meta{
+            height: 50px;
+            overflow: hidden;
+        }
+        .ant-card-meta-title{
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+        .ant-card-cover{
+            height: 200px;
+            line-height: 200px;
+            border: 1px solid #eee;
+            overflow: hidden;
+            img{
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        .ant-card-body{
+            text-align: center;
+            font-size: 12px;
+            padding: 10px 0;
+        }
+        .anticon-delete{
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            color: red;
+        }
+        .ant-card:hover{
+            .anticon-delete{
+                display: block;
+            }
+        }
+        .ant-pagination{
+            text-align: right;
+        }
+        @media screen and (max-width:1600px){
+            .ant-card-cover{
+                height: 100px;
+                line-height: 100px;
+            }
+            .anticon-delete{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.tips-wrap {
+    padding-left: 100px;
+    .my-dialog-icon {
+        position: absolute;
+        margin-left: -80px;
+        width: 70px;
+        height: 70px;
+        background: url('../../../images/dialog-confirm.png');
+        display: block;
+    }
+    .tips-box {
+        color: #f60;
+        font-size: 16px;
+        strong{
+            display: block;
+            color: #666;
+            padding-bottom: 15px;
+            em{
+                font-style: normal;
+                color: #22baa0;
+                max-width: 250px;
+                display: inline-block;
+                text-overflow: ellipsis;
+            }
+        }
+        span{
+            display: block;
+            font-size: 14px;
+        }
+    }
+}
+.icon-bounce {
+    animation: bounce 1s .2s infinite ease both;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px)
+    }
+}
+
+.tianwu-icon-modal{
+    .ant-upload.ant-upload-drag p.ant-upload-text{
+        color: #999;
+    }
+    .ant-upload.ant-upload-drag p.ant-upload-drag-icon{
+        margin-bottom: 0;
+    }
+    .ant-upload-list-item {
+        float: left;
+        width: 118px;
+        margin-right: 8px;
+    }
+}

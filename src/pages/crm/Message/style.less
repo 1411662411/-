@@ -1,0 +1,110 @@
+.crm-message-center{
+    background: #fff;
+    .date-no-input{
+        .ant-calendar-picker-icon{
+            right:30px;
+            &::after{
+                font-size: 24px;
+                line-height: 60%;
+            }
+        }
+    }
+    .ant-input-search.ant-input-search-enter-button > .ant-input{
+        padding-right: 76px;
+    }
+    .ant-input-search > .ant-input-suffix > .ant-input-search-button{
+        margin-left: 10px;
+    }
+    .anticon-close-circle{
+        color: #999;
+    }
+    .ant-table-placeholder{
+        text-indent: -999rem;
+        min-height: 400px;
+        background: url('../../../images/no-msg-1.png') center center no-repeat;
+    }
+    .crm-message-wrap{
+        position: relative;
+        .ant-table-body > table{
+            border: 0;
+        }
+        .ant-table-thead > tr > th{
+            background: #fff;
+            border: 0;
+            border-bottom: 2px solid #22baa0;
+            padding-bottom: 15px;
+            padding-left: 0;
+        }
+        .ant-table-tbody > tr > td{
+            padding-left: 0;
+            border: 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .crm-message-center-buttons{
+            position: absolute;
+            top: 4px;
+            left: 26px;
+            z-index: 1;
+        }
+        .message-icon{
+            position: relative;
+            padding-left: 25px;
+            text-align: left;
+            .crmiconfont{
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                font-size: 18px;
+            }
+        }
+        .messageTable-tr-0{
+            font-weight: bold;
+            .message-icon{
+                font-weight: normal;
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+        .messageTable-tr-1{
+            span{
+                color: #999;
+            }
+        }
+        span.message-info{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+        .messageTable-tr-0, .messageTable-tr-1{
+            .ant-checkbox{
+                top: 3px;
+            }
+        }
+        .ant-table-selection-column{
+            width: 28px;
+            min-width: 0;
+            text-align: left;
+            .ant-checkbox-inner{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+    .right-time{
+        text-align: right;
+        white-space: nowrap;
+    }
+}
+.message-tip{
+    .ant-tooltip-inner{
+        max-width: 100%;
+        background-color: #fff2dd;
+        color: #999;
+    }
+    .ant-tooltip-arrow{
+        border-top-color: #fff2dd;
+    }
+}

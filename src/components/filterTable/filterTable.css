@@ -1,0 +1,39 @@
+:global(.popover_div) :global(.btn_div) {
+    text-align: right;
+    margin-left: 2px;
+    float: right;
+}
+
+:global(.popover_div) :global(.btn_div) :global(.ok) {
+    margin-right: 5px;
+    padding: 0 8px;
+}
+
+:global(.popover_div) :global(.btn_div) :global(.cancel) {
+    padding: 0 8px;
+}
+
+
+/*:global(.form_style) :global(.ant-form-item){
+    margin: 0 !important;
+}*/
+
+:global(.form_style) {
+    display: inline-block;
+    min-height: 28px;
+}
+
+:global(.form_style) :global(.ant-form-item-control) {
+    line-height: 1.5;
+}
+
+:global(.form_style) :global(.ant-form-item) {
+    display: inline-block;
+}
+
+
+/*:global(.ant-popover-inner-content) :global(.ant-form-horizontal){
+    display: inline-block;
+
+    width: 150px;
+}*/

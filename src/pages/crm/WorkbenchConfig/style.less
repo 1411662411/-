@@ -1,0 +1,71 @@
+.crm-workbench-config{
+    .crm-workbench-config-title{
+        display: inline-block;
+        background: #FFF3DD;
+        padding: 4px 8px;
+        width: 265px;
+        padding-right: 70px;
+        font-family:  "Microsoft YaHei";
+        margin-bottom: 14px;
+        >span:first-child{
+            border-left: 4px solid #22baa0;
+            padding-left:2px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    .crm-workbench-config-title-container:not(:first-child){
+        margin-top: 28px;
+    }
+
+    
+}
+
+.crm-avatars-container{
+    position: relative;
+    padding: 0 26px;
+    .crm-avatars-container-left,.crm-avatars-container-right{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        line-height: 150%;
+        width: 26px;
+        > i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -13px;
+            margin-left: -14px;
+            font-size: 24px;
+            color: #ccc;
+            &.crmiconfont-enable{
+                color: #22baa0;
+                cursor: pointer;
+            }
+            &.crmiconfont-disabled{
+                color: #ccc;
+                cursor: no-drop;
+            }
+        }
+    }
+    .crm-avatars-container-left{
+        left: 0;
+    }
+    .crm-avatars-container-right{
+        right: 0;
+    }
+    .crm-workbench-config-avatar{
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        line-height: 60px;
+        > *{
+            line-height: 60px;
+        }
+    }
+    
+    .crm-workbench-config-avatar-noSrc{
+        background: transparent;
+        cursor: default;
+    }
+}

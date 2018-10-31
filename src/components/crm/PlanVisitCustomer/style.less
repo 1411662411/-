@@ -1,0 +1,25 @@
+.crm-plan-visit-customer-container{
+    max-height: 280px;
+    .crm-plan-visit-customer-item:not(:last-child){
+        position: relative;
+        padding: 10px;
+        padding-right: 40px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        border-bottom: 1px solid #e8e8e8;
+        .crm-plan-visit-customer-item-content{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #6EB0E4;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .crm-plan-visit-customer-item-del{
+            position: absolute;
+            right: 4px;
+            top: 10px;
+            cursor: pointer;
+        }
+    }
+}

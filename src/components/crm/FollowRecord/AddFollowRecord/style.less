@@ -1,0 +1,71 @@
+.crm-follow-record-modal{
+    .ant-list{
+        margin-top: 10px;
+    }
+    .ant-modal-body{
+        padding-top: 14px;
+        .crm-follow-record-add{
+            position: absolute;
+            top: -10px;
+            right: 24px;
+        }
+        .crm-follow-record-list-container{
+            max-height: 460px;
+            overflow: hidden;
+            &:hover{
+                overflow: auto;
+            }
+            &::-webkit-scrollbar{
+                width: 8px;
+                background-color: #F5F5F5;
+            }
+            &::-webkit-scrollbar-thumb{
+                border-radius: 8px;
+                // -webkit-box-shadow: inset 0 0 6px #999;
+                // box-shadow: inset 0 0 6px #999;
+                background-color: #D2D2D2;
+            }
+            &::-webkit-scrollbar-track{ //滚动条背景
+                // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 0px;
+                background-color: #fff;
+            }
+        }
+    }
+    .ant-list-vertical .ant-list-item-meta-title{
+        margin-bottom: 0;
+    }
+    .ant-list-vertical .ant-list-item-meta{
+        margin-bottom: 6px;
+    }
+    .ant-list-vertical .ant-list-item-content{
+        margin-bottom: 4px;
+    }
+    .ant-list-item{
+        padding-left: 14px;
+        .crm-follow-time{
+            color: #22baa0;
+            position: relative;
+            cursor: default;
+        }
+        &:hover{
+            color: #fff;
+            .crm-follow-time{
+                color: #FE6600;
+                .greenPoint{
+                    background: #FE6600;
+                }
+            }
+        }
+    }
+    .greenPoint{
+        position: absolute;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #22BAA0;
+        top: 8px;
+        left: -14px;
+    }
+}

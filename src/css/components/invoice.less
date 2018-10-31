@@ -1,0 +1,95 @@
+
+@border-color:#bdb7b7;
+.table.border-table {
+    width: 100%;
+    border-collapse: separate;
+    border: 1px solid @primary-color ;
+    border-right: 0;
+    border-bottom: 0;
+    border-spacing: 0;
+    td {
+        padding: 5px 0;
+        border-right: 1px solid @border-color;
+        border-bottom: 1px solid @border-color;
+    }
+    tr:last-child td {
+        border-bottom-color: @primary-color;
+    }
+    td:last-child {
+        border-right: 1px solid @primary-color;
+    }
+    td:nth-child(odd) {
+        text-align: right;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgb(233, 236, 241)
+    }
+    td:nth-child(even) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .ant-form-item {
+        margin-bottom: 0;
+    }
+    .ant-upload.ant-upload-select-picture-card {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        .ant-upload {
+            padding: 5px 0 0 0;
+        }
+    }
+    .ant-upload-list-picture-card {
+        .ant-upload-list-item {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+}
+.invoice-wrapper {
+    .top-line {
+        margin-top: 28px;
+        border-top: 1px solid #e9e9e9;
+        padding-top: 20px;
+    }
+    .recommended,
+    .question-circle {
+        color: #f90;
+    }
+    .invoice-type-head {
+        .ant-card-head {
+            height: auto;
+        }
+    }
+    .invoice-person-info, {
+        .ant-form-item-control-wrapper {
+            float: right;
+            margin-top: 2px;
+        }
+    }
+    .invoice-type-item {
+        .invoice-type-name {
+            position: relative;
+            top: 2px;
+        }
+        .ant-form-item-label {
+            font-weight: 700;
+        }
+        .ant-form-item-control-wrapper {
+            display: inline-block;
+        }
+    }
+    .upload-disabled {
+        .anticon-delete {
+            display: none;
+        }
+    }
+    .label-no-after .ant-form-item-label label::after {
+        content: '';
+    }
+}
+
+

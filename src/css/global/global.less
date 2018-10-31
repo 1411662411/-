@@ -1,0 +1,227 @@
+
+    // @import '../../../node_modules\antd\lib\style\themes\default.less';
+
+// @table-prefix-cls: ~"@{ant-prefix}-table";
+
+// .@{table-prefix-cls}-bordered.@{table-prefix-cls}-empty {
+//     .@{table-prefix-cls}-thead > tr > th {
+//         border-bottom: @border-width-base @border-style-base @border-color-split;
+//     }
+// }
+
+@import '../../../node_modules/antd/dist/antd.less';
+@import '../../../node_modules/antd/lib/style/v2-compatible-reset.less';
+
+
+/*
+ * 全局
+ * 
+ */
+.overflow-x-scroll {
+    .ant-table-fixed-header {
+        .ant-table-scroll {
+            .ant-table-header {
+                overflow: hidden;
+                overflow-x: scroll;
+            }
+        }
+    }
+}
+.ant-table-thead > tr > th {
+    color: #fff;
+}
+.ant-layout {
+    flex: 1;
+    overflow: auto;
+}
+.ant-breadcrumb {
+    margin: 20px 0 !important; 
+    font-size: 18px;
+    font-weight: 700;
+    color: #22baa0;
+    span:last-child{
+        color: #22baa0;
+    }
+}
+.ant-layout-sider-trigger {
+    background-color: #34425A !important;
+}
+.ant-table-thead > tr > th.ant-table-selection-column, .ant-table-tbody > tr > td.ant-table-selection-column{
+    min-width: 40px;
+    width: 40px;
+}
+// .ant-cascader-menu {
+//     height: auto;
+// }
+
+/*
+ * antd升级3.0 之后 padding 变成了 16px 16px,
+ * 手动回复至2.0 的样式。
+ */
+.ant-table-thead > tr > th, 
+.ant-table-tbody > tr > td {
+    padding: 8px;
+    word-break: break-all;
+}
+.ant-table-wrapper-text-center{
+    .ant-table-thead > tr > th, 
+    .ant-table-tbody > tr > td {
+        text-align: center;
+    }
+}
+.no-icon-popconfirm{
+    .ant-popover-message > .anticon{
+        display: none;
+    }
+    .ant-popover-message-title{
+        padding-left: 0;
+    }
+}
+.ant-table-placeholder{
+    padding: 8px;
+    border: 1px solid #e8e8e8;
+    border-top: 0; 
+}
+
+.text-small{
+    font-size: 12px;
+    color: #999;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-green{
+    color: #22BAA0;
+}
+.text-error{
+    color: #E43224;
+}
+.text-orange {
+    color: #f50;
+}
+.text-blue {
+    color: #0066FF;
+}
+.text-cyan {
+    color: #37CBCB;
+}
+.text-magenta {
+    color: #EB2F96;
+}
+.text-gold {
+    color: #FAAD14;
+}
+.text-purple {
+    color: #722ED1;
+}
+.rt{
+    float: right;
+}
+.lt{
+    float: left;
+}
+.custom-scroll-bar{
+    overflow: hidden;
+    &:hover{
+        overflow: auto;
+    }
+    &::-webkit-scrollbar{
+        width: 8px;
+        background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb{
+        border-radius: 8px;
+        // -webkit-box-shadow: inset 0 0 6px #999;
+        // box-shadow: inset 0 0 6px #999;
+        background-color: #D2D2D2;
+    }
+    &::-webkit-scrollbar-track{ //滚动条背景
+        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 0px;
+        background-color: #fff;
+    }
+}
+.fixed-center{
+    width: 100px; 
+    height: 50px; 
+    position: fixed; 
+    left: 50%; 
+    margin: -25px 0 0 -50px; 
+    top: 50%;
+}
+
+.fade-enter {
+    opacity: 0;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-appear {
+    opacity: 0;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-leave {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-enter.fade-enter-active {
+    animation-name: fadeIn;
+    animation-play-state: running;
+}
+
+.fade-appear.fade-appear-active {
+    animation-name: fadeIn;
+    animation-play-state: running;
+}
+
+.fade-leave.fade-leave-active {
+    animation-name: fadeOut;
+    animation-play-state: running;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+form .ant-input-group, form .ant-input-group-wrapper{
+    display: table;
+}
+
+form .ant-pagination-options .ant-select{
+    width: auto;
+}
+
+.text-1-ellipsis{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}

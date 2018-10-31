@@ -1,0 +1,67 @@
+.express-address-wrapper {
+    .more-express-address {
+        cursor: pointer;
+        color: #ccc;
+        .switch-on,
+        .switch-off {
+            display: inline-block;
+            transform: rotate(90deg);
+        }
+        .switch-off {
+            transform: rotate(-90deg);
+        }
+    }
+   
+    .express-address-item  {
+        position: relative;
+        display: flex;
+        border: 1px solid #e9e9e9;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 10px 0 ;
+        cursor: pointer;
+        > div {
+            margin-right: 10px;
+            width: 100px;
+            white-space: nowrap;
+        }
+        .address {
+            flex: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .handle-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            > a {
+                margin-right: 6px;
+            }
+        }
+    }
+    .express-address-item:hover,
+    .express-address-item.active {
+        border-color: @primary-color;
+    }
+    .check-wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 28px;
+        height: 28px;
+        .triangle {
+            position: absolute;
+            border-width: 14px;
+            border-color: transparent @primary-color @primary-color transparent;
+            border-style: solid;
+        }
+        .check {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: #fff;
+        }
+    }
+    
+        
+    
+}
